@@ -31,7 +31,6 @@ from cryptography.fernet import Fernet, InvalidToken
 
 # ---------- Configuration ----------
 DB_FILE = "expenses.db"  # chosen option 3-A
-PDF_FONT_FILE = "DejaVuSans.ttf"  # place DejaVuSans.ttf next to script to support unicode in PDF
 ENCRYPT_NOTES = bool(os.getenv("EXPENSE_ENCRYPT_NOTES", "0") == "1")
 FERNET_KEY = os.getenv("EXPENSE_KEY")  # must be a 32 url-safe base64 key if encryption enabled
 
