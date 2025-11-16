@@ -4,7 +4,7 @@
 
 ![Release](https://img.shields.io/badge/release-v1.0.0-blue)
 
-A **Python CLI application** for managing personal expenses with **SQLite** + **SQLAlchemy**, featuring budgets, analytics, Excel/PDF exports, encrypted notes, and interactive CLI via Rich.
+A Python CLI app to manage personal expenses with budgets, analytics, exports, and optional encrypted notes.
 
 ---
 
