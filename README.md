@@ -2,6 +2,8 @@
 
 # Expense Tracker CLI
 
+![Release](https://img.shields.io/badge/release-v1.0.0-blue)
+
 A **Python CLI application** for managing personal expenses with **SQLite** + **SQLAlchemy**, featuring budgets, analytics, Excel/PDF exports, encrypted notes, and interactive CLI via Rich.
 
 ---
