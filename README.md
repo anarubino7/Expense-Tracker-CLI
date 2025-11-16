@@ -40,7 +40,7 @@ If you like this tool, ⭐ it on GitHub!
 1. **Clone repo**
 
 ```bash
-[git clone https://github.com/CPS7/Expense-Tracker-CLI](https://github.com/CPS7/Expense-Tracker-CLI.git)
+[git clone https://github.com/CPS7/Expense-Tracker-CLI.git
 cd Expense-Tracker-CLI
 ```
 
