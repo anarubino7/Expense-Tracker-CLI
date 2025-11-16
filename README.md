@@ -2,6 +2,8 @@
 
 # Expense Tracker CLI
 
+Version: v1.0.0
+
 A **Python CLI application** for managing personal expenses with **SQLite** + **SQLAlchemy**, featuring budgets, analytics, Excel/PDF exports, encrypted notes, and interactive CLI via Rich.
 
 ---
