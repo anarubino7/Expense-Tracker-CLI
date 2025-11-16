@@ -8,6 +8,8 @@ A **Python CLI application** for managing personal expenses with **SQLite** + **
 
 ---
 
+If you like this tool, ⭐ it on GitHub!
+
 ## **Features**
 
 * Add, update, and soft-delete expenses
